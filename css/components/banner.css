@@ -1,0 +1,21 @@
+.banner {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #92FFF0;
+  transition: 0.5s;
+  border: 5px solid;
+  border-style: dotted;
+  border-width: 7px;
+  border-color: yellow;
+
+}
+
+.banner:hover {
+  background-image: url('https://picsum.photos/200/300');
+  transition: 0.5s;
+  }

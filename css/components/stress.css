@@ -1,0 +1,26 @@
+.stress {
+    animation:blinkingText 1s infinite;
+    font-size: 100px;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    animation: 0.2s shake infinite alternate;
+
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: transparent; }
+    50%{    color: #000; }
+    99%{    color: blue ;  }
+    100%{   color: #000;    }
+}
+
+
+@keyframes shake {
+  0% {color: red; transform: skewX(-15deg); }
+  5% { color: transparent;transform: skewX(15deg); }
+  10% { color: #000;transform: skewX(-15deg); }
+  15% { color: blue ;transform: skewX(15deg); }
+  20% { color: #000; transform: skewX(0deg); }
+  100% {color: yellow; transform: skewX(0deg); }
+}

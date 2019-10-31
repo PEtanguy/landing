@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My landing page</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <!-- We need this line below for responsiveness! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <!-- <link rel="javascript" href="javascript/countdown.js"> -->
+  <script>
+    function startTime() {
+      var today = new Date();
+      var s = today.getSeconds();
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+
+
+</head>
+<body onload="startTime()">
+
+  <div class="whole">
+
+
+
+
+    <div class="banner">
+
+      <h1>Hoxton Digital</h1>
+
+      <h2>We make websites.</h2>
+
+
+    </div>
+    <video loop muted autoplay >
+    <source src="images/Go-Goat.mp4" type="video/mp4">
+    </video>
+
+      <h2>HOW IT WORKS</h2>
+      <div class="subcontent">
+
+        <div class="timer">
+          <div id="txt" class="stress move"></div>
+          <button class="btn">Click here</button>
+        </div>
+
+      </div>
+
+  </div>
+
+
+  <div class="content">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+  </div>
+  <!-- code a Hero / Banner section -->
+
+  <!-- code a "How it works" section -->
+
+  <!-- code a footer -->
+
+</body>
+
+<footer>
+  <p>Terms & Conditions</p>
+</footer>
+</html>
+
+

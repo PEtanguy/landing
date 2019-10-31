@@ -1,0 +1,19 @@
+.whole {
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+
+}
+
+
+.whole video {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+}
